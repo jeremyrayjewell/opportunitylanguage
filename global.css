@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-21xl: 40px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-red: rgba(225, 26, 13, 0.44);
+  --color-aquamarine: #b3fac2;
+
+  /* border radiuses */
+  --br-81xl: 100px;
+}
