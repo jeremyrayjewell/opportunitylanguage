@@ -32,15 +32,24 @@
 }
 .figurative-language-is-container1 {
   line-break: anywhere;
-  width: 100%;
 }
 .figurative-language-is-container {
+  align-self: stretch;
+  flex: 1;
   position: relative;
   display: flex;
   align-items: center;
-  width: 1338px;
-  height: 529.33px;
-  flex-shrink: 0;
+}
+.top {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-10xl) 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-13xl);
 }
 .undraw-raining-re-4b55-1-icon {
   max-width: 100%;
@@ -53,21 +62,14 @@
   align-self: stretch;
   position: relative;
 }
-.an-idiom-is,
 .imagecap {
   align-self: stretch;
-  display: flex;
-  align-items: center;
-}
-.imagecap {
   width: 360px;
+  display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
   gap: 14px;
-}
-.an-idiom-is {
-  flex: 1;
-  position: relative;
 }
 .an-idiom-is-a-phrase-or-expres-wrapper,
 .center {
@@ -88,7 +90,6 @@
 .center {
   align-items: center;
   gap: 43px;
-  text-align: center;
   font-size: 16px;
 }
 .continue,
@@ -110,18 +111,6 @@
   width: 284px;
   height: 140px;
   flex-direction: column;
-  text-align: center;
-  font-size: var(--font-size-21xl);
-}
-.figurative-language-is-a-way-o-parent {
-  align-self: stretch;
-  height: 1728px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  text-align: left;
-  font-size: var(--font-size-13xl);
 }
 .desktop-1280-1920 {
   position: relative;
