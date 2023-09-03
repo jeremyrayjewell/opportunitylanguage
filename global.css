@@ -9,11 +9,16 @@ body {
 
   /* font sizes */
   --font-size-21xl: 40px;
+  --font-size-13xl: 32px;
 
   /* Colors */
-  --color-black: #000;
   --color-red: rgba(225, 26, 13, 0.44);
+  --color-black: #000;
+  --color-white: #fff;
   --color-aquamarine: #b3fac2;
+
+  /* Paddings */
+  --padding-31xl: 50px;
 
   /* border radiuses */
   --br-81xl: 100px;
