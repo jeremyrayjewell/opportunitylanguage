@@ -1,34 +1,127 @@
-.untitled-design-27-removebg-icon {
-  position: relative;
-  width: 128px;
-  height: 139px;
+/* Reset CSS */
+body, div, p, img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-red: #ff0000;
+  --color-aquamarine: #00ffff;
+  --font-size-xs: 12px;
+  --font-size-3xs: 14px;
+  --font-size-5xs: 16px;
+  --font-size-xl: 24px;
+  --font-size-10xl: 96px;
+  --padding-3xs: 4px;
+  --padding-xl: 24px;
+  --padding-10xl: 96px;
+  --padding-31xl: 124px;
+  --padding-36xl: 144px;
+  --gap-3xs: 8px;
+  --gap-28xl: 112px;
+  --br-81xl: 324px;
+}
+
+/* Responsive Layout Styles */
+.responsive-layout {
+  max-width: 100%;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--color-aquamarine);
+  padding: 20px 0;
+  text-align: center;
+  font-size: var(--font-size-xl);
+}
+
+/* Icon Styles */
+.icon {
+  width: 75px;
+  height: 82px;
   object-fit: cover;
 }
-.figurative-language-11 {
-  margin: 0;
+
+/* Figurative Language Styles */
+.title {
+  font-weight: bold;
+  font-size: var(--font-size-xl);
 }
-.figurative-language-11-container {
-  align-self: stretch;
-  flex: 1;
-  position: relative;
+
+.subtitle {
+  font-size: var(--font-size-5xs);
 }
-.component-child {
-  position: relative;
+
+.description {
+  font-size: var(--font-size-3xs);
+}
+
+/* Ellipse Styles */
+.ellipse {
   border-radius: 50%;
   background-color: var(--color-red);
   width: 74px;
   height: 74px;
+  display: none;
 }
-.untitled-design-27-removebg-parent {
-  position: relative;
-  width: 100%;
+
+/* Parent Container Styles */
+.parent-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
-  gap: 407px;
-  text-align: center;
-  font-size: var(--font-size-21xl);
-  color: var(--color-black);
-  font-family: var(--font-inter);
+  justify-content: space-between;
+  text-align: right;
 }
+
+/* Text Container Styles */
+.text-container {
+  display: inline-block;
+  width: 321px;
+  height: 92px;
+  flex-shrink: 0;
+}
+
+/* Top Styles */
+.top {
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-10xl) 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Raining Icon Styles */
+.raining-icon {
+  width: 81px;
+  height: 78px;
+}
+
+/* Caption Container Styles */
+.caption-container {
+  align-items: center;
+  gap: var(--gap-28xl);
+  text-align: center;
+  font-size: var(--font-size-5xs);
+}
+
+/* Green Box and Image Caption Styles */
+.green-box, .image-caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.green
