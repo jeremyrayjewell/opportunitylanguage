@@ -1,0 +1,195 @@
+/* Common styles */
+body, header, main, footer {
+    margin: 8px;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(to right, #ddd, #333); 
+    color: #fff; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.image-container {
+    margin-right: 15px; 
+}
+
+.icon {
+    max-width: 100px;
+    height: auto;
+}
+
+.text-container {
+    flex: 1;
+    text-align: right;
+}
+
+.title, .subtitle {
+    margin: 0;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+/* Main content styles */
+main {
+    margin: 50px 150px;
+    font-size: 1.2rem;
+}
+
+main p {
+    padding: 10px;
+}
+
+.image-caption, .in-text-image {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 30px;
+}
+
+.in-text-image {
+    margin-right: 0px; 
+    width: 350px;
+    height: auto;
+}
+
+.caption {
+    flex: 2;
+    font-weight: initial;
+    font-size: 0.9rem;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Styled boxes */
+.green-square {
+    background-color: rgb(144, 238, 144);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.green-square p {
+    color: #333;
+    margin: 0;
+}
+
+/* Buttons */
+.continue {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.continue:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(to right, #ddd, #333); 
+    color: #fff; 
+    padding: 4px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    text-decoration: none;
+}
+
+footer .footer-icon {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+footer .footer-text{
+    flex: 1;
+    text-align: right;
+    margin-left: 10px;
+}
+
+footer .footer-text a {
+    text-decoration: none;
+    color: inherit;
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+footer .footer-text a:hover {
+    color: #F5F5F5;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 909px) {
+    .image-caption{
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    header {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-caption{
+        flex-direction: column;
+    }
+    .image-container {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .text-container {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    main {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for even smaller screens here */
+    header {
+        padding: 5px;
+    }
+    .image-caption{
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+    }
+
+    main {
+        margin: 10px;
+    }
+}
