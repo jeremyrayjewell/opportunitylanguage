@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             question: "\"Is he really that strong, or is he just ___ your leg?\" (said when someone is joking or not being serious)",
-            correctAnswer: "pull",
+            correctAnswer: "pulling",
         },
         {
             question: "\"I'm sorry, I didn't mean to ___ on your parade.\" (said when someone's plans are ruined or their mood is spoiled)",
@@ -26,24 +26,24 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             question: "\"I was going to propose, but I got ___ feet at the last minute.\" (said when someone becomes nervous or hesitant about something)",
-            correctAnswer: "get",
+            correctAnswer: "cold",
         },
         {
             question: "\"She really ___ over backwards to help me with the project.\" (said when someone goes above and beyond to do something)",
-            correctAnswer: "bend",
+            correctAnswer: "bent",
         },
         {
             question: "\"I took on too many responsibilities at work and ___ off more than I could chew.\" (said when someone takes on more than they can handle)",
-            correctAnswer: "chew",
+            correctAnswer: "bit",
         },
         {
             question: "\"We've been talking about starting this project for weeks, but we need someone to ___ the ball rolling.\" (said when someone needs to take the first step or get something started)",
-            correctAnswer: "roll",
+            correctAnswer: "get",
         },
     ];
 
     const wordBank = [
-        "break", "piece", "let", "pull", "rain", "get", "bend", "chew", "roll", "cost",
+        "break", "piece", "let", "pulling", "rain", "cold", "bent", "bit", "get", "cost",
     ];
 
     function shuffleArray(array) {
