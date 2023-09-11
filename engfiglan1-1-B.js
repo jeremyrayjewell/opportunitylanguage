@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "break", "piece", "let", "pulling", "rain", "cold", "bent", "bit", "get", "cost",
     ];
 
+    let correctAnswersCount = 0; // Variable to keep track of correct answers
+
     function shuffleArray(array) {
         // Shuffle the array using Fisher-Yates algorithm
         for (let i = array.length - 1; i > 0; i--) {
@@ -76,24 +78,34 @@ document.addEventListener("DOMContentLoaded", function () {
         
         if (selectedWord === question.correctAnswer) {
             feedback.textContent = "Correct!";
+            correctAnswersCount++;
+
+            if (correctAnswersCount === questions.length) {
+                enableContinueButton();
+            }
         } else {
             feedback.textContent = "Incorrect. Try again.";
+            disableContinueButton(); // Disable the button if there's an incorrect answer
         }
     }
+
+    function enableContinueButton() {
+        const continueButton = document.querySelector("#cont-if-fin");
+        continueButton.style.backgroundColor = "#007bff"; // Change to blue
+        continueButton.style.pointerEvents = "auto"; // Enable clicking
+    }
+
+    function disableContinueButton() {
+        const continueButton = document.querySelector("#cont-if-fin");
+        continueButton.style.backgroundColor = "gray";
+        continueButton.style.pointerEvents = "none"; // Disable clicking
+    }
+
+    // Disable "Continue" button initially
+    disableContinueButton();
 
     // Populate options for each question
     for (let i = 0; i < questions.length; i++) {
         populateOptions(i);
-    }
-
-    // Populate word bank options
-    const wordBankOptionsContainer = document.getElementById("word-bank-options");
-    for (const word of wordBank) {
-        const button = document.createElement("button");
-        button.textContent = word;
-        button.addEventListener("click", function () {
-            checkAnswer(i, word);
-        });
-        wordBankOptionsContainer.appendChild(button);
     }
 });
