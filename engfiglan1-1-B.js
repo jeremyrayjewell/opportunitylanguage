@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     const wordBank = [
-        "break", "piece", "let", "pull", "rain", "get", "bend", "chew", "roll",
+        "break", "piece", "let", "pull", "rain", "get", "bend", "chew", "roll", "cost",
     ];
 
     function shuffleArray(array) {
