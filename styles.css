@@ -116,12 +116,41 @@ main p {
     font-size: 1rem;
 }
 
+.use-sample2 {
+    background: linear-gradient(to right, rgb(173, 243, 245), #fff, rgb(173, 243, 245));
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 1rem;
+}
+
 /* Buttons */
 
 .continue-wrapper  {
     display: flex;
     flex-direction: row;
     justify-content: space-between; /* Adjust this based on your spacing preference */
+}
+
+.type-space {
+    background-color: #f2f8ff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.continue2 {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
 }
 
 .continue {
