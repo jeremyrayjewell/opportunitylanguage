@@ -132,6 +132,7 @@ main p {
     cursor: pointer;
     display: block;
     margin: 0 auto;
+    border-radius: 3px;
 }
 
 .continue a {
@@ -175,6 +176,21 @@ footer .footer-text a {
 
 footer .footer-text a:hover {
     color: #F5F5F5;
+}
+
+/* Style the word choice buttons */
+.word-choice {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.word-choice:hover {
+    background-color: #0056b3;
 }
 
 /* Media Queries for Responsive Design */
