@@ -77,21 +77,26 @@ document.addEventListener("DOMContentLoaded", function () {
         const feedback = document.getElementById(`q${questionIndex + 1}-feedback`);
         
         if (selectedWord === question.correctAnswer) {
-            feedback.textContent = "Correct!";
+            feedback.textContent = `Correct! The answer is "${question.correctAnswer}".`;
+            feedback.classList.remove("incorrect-answer");
+            feedback.classList.add("correct-answer");
             correctAnswersCount++;
 
             if (correctAnswersCount === questions.length) {
                 enableContinueButton();
             }
+
+            // Disable other answer options
+            disableOtherOptions(questionIndex);
         } else {
             feedback.textContent = "Incorrect. Try again.";
-            disableContinueButton(); // Disable the button if there's an incorrect answer
+            feedback.classList.add("incorrect-answer");
         }
     }
 
     function enableContinueButton() {
         const continueButton = document.querySelector("#cont-if-fin");
-        continueButton.style.backgroundColor = "#007bff"; // Change to blue
+        continueButton.style.backgroundColor = "blue"; // Change to blue
         continueButton.style.pointerEvents = "auto"; // Enable clicking
     }
 
@@ -99,6 +104,17 @@ document.addEventListener("DOMContentLoaded", function () {
         const continueButton = document.querySelector("#cont-if-fin");
         continueButton.style.backgroundColor = "gray";
         continueButton.style.pointerEvents = "none"; // Disable clicking
+    }
+
+    function disableOtherOptions(questionIndex) {
+        const optionsContainer = document.getElementById(`q${questionIndex + 1}-options`);
+        const buttons = optionsContainer.querySelectorAll("button");
+
+        buttons.forEach((button) => {
+            if (button.textContent !== questions[questionIndex].correctAnswer) {
+                button.disabled = true;
+            }
+        });
     }
 
     // Disable "Continue" button initially

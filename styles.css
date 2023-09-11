@@ -193,6 +193,14 @@ footer .footer-text a:hover {
     background-color: #0056b3;
 }
 
+.correct-answer {
+    background: linear-gradient(to right, rgb(90, 236, 97), #fff, #fff);
+}
+
+.incorrect-answer{
+    background: linear-gradient(to right,rgb(243, 131, 87), #fff, #fff);
+}
+
 /* Media Queries for Responsive Design */
 @media (max-width: 909px) {
     .image-caption{
