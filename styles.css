@@ -153,6 +153,65 @@ main p {
     border-radius: 3px;
 }
 
+.options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Adjust the gap between buttons as needed */
+    max-width: 600px; /* Adjust the maximum width of the grid container as needed */
+    margin: 20px;
+}
+
+.option-button {
+    border: 1;
+    color: #000;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.option-button.disabled {
+    background-color: gray;
+    pointer-events: none;
+}
+
+.blank-button {
+    color: #000;
+    border: 1;
+    margin: -3 0 0;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+.blank-button.correct {
+    background-color: green;
+    color: #fff;
+}
+
+.blank-button.clicked {
+    background-color: gray;
+}
+
+
+.blank-button.incorrect {
+    background-color: red;
+    color: #fff;
+}
+
+#cont-if-fin.disabled {
+    background-color: gray;
+    pointer-events: none;
+}
+
+.button-clicked {
+    background-color: gray;
+}
+
 .continue {
     background-color: #007bff;
     color: #fff;
